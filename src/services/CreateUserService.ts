@@ -14,10 +14,6 @@ class CreateUserService {
 
     async exceute({name, email, password, admin} : IUserRequest) {
 
-        console.log(email)
-        console.log(name)
-        console.log(admin)
-
         if(!email) {
             throw new Error('Something is wrong with e-mail ')
         }
